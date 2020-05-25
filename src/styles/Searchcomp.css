@@ -1,0 +1,60 @@
+.search{
+    /* text-align: center; */
+    /* background: rgb(243, 241, 241); */
+  }
+
+  .search h1{
+      text-align: center;
+  }
+  
+  .text-primary{
+    color: #f7c08a;
+  }
+  
+  #form-control{
+    padding: 10px;
+    width: 50%;
+  }
+  
+  #form-control label{
+    display: block;
+  }
+  
+  #form-control input{
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+  }
+
+  #form-control input:focus{
+    outline: none;
+    border-color: #f7c08a;
+  }
+
+  .box{
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .SingleDatePicker {
+    width: 100%;
+    border: none;
+  }
+
+  .SingleDatePicker input{
+      border: none !important;
+  }
+  
+  .SingleDatePickerInput {
+    width: 100%;
+    border: none;
+  }
+
+  .SingleDatePickerInput__withBorder {
+    border: none;
+  }
+
+  .DateInput_input__focused {
+    width: 100%;
+    border-bottom: 1px solid #ccc !important;
+  }
