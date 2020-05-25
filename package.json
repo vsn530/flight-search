@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "ag-grid-community": "^23.1.1",
     "ag-grid-react": "^23.1.1",
+    "express": "^4.17.1",
     "moment": "^2.26.0",
     "react": "^16.13.1",
     "react-dates": "^20.3.0",
@@ -15,7 +16,8 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start ",
+    "server":"node server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

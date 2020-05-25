@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'react-dates/initialize';
 import moment from 'moment';
 import { SingleDatePicker } from 'react-dates';
@@ -13,9 +13,15 @@ const FlightSearch = (props) => {
     const [focused, setFocused] = useState(false)
     const [retfocused, setretFocused] = useState(false)
 
+    const[cities,setCities] = useState([])
+
     const handleSubmit = (e) => {
         e.preventDefault();
     }
+
+    useEffect(()=>{
+        fetch('http://localhost:3001/cities').then(res => res.json()).then(cities => setCities([...cities]))
+    },[])
 
     return (
         <div className='search'>
@@ -26,12 +32,20 @@ const FlightSearch = (props) => {
                         <div className='box'>
                             <div id='form-control'>
                                 <label for='source' >Source City</label>
+                                <select id='source' className='select-css' placeholder='Enter your source city'>
+                                    {
+                                        cities.map((city)=><option value={city}>{city}</option>)
+                                    }
+                                </select>
                                 
-                                <input type='text' id='source' placeholder='Enter your source city' />
                             </div>
                             <div id='form-control'>
                                 <label for='destination' >Destination City</label>
-                                <input type='text' id='destination' placeholder='Enter your Destination' />
+                                <select id='destination' className='select-css' placeholder='Enter your source city'>
+                                    {
+                                        cities.map((city)=><option value={city}><li>{city}</li></option>)
+                                    }
+                                </select>
                             </div>
                         </div>
                         <div className='box'>
@@ -44,6 +58,8 @@ const FlightSearch = (props) => {
                                     onFocusChange={() => { setFocused(!focused) }}
                                     numberOfMonths={1}
                                     isOutsideRange={() => false}
+                                    showDefaultInputIcon
+                                    inputIconPosition='before'
                                     withPortal={true}
                                 />
                             </div>
@@ -56,6 +72,8 @@ const FlightSearch = (props) => {
                                     onFocusChange={() => { setretFocused(!retfocused) }}
                                     numberOfMonths={1}
                                     isOutsideRange={() => false}
+                                    showDefaultInputIcon
+                                    inputIconPosition='before'
                                     withPortal={true}
                                 />
                                 { /*<input type='date' id='returndate' placeholder='Return On' />*/}
