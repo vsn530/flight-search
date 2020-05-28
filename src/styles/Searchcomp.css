@@ -92,18 +92,30 @@
     }
   }
 
+  .actions{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #error{
+    color: #1d1a1c;
+    font-weight: bold;
+  }
+
   .SingleDatePicker {
     background-color: #fff;
     width: 100%;
     border: none;
+    border-radius: 10px;
   }
 
-  .SingleDatePicker input{
-        
+  .SingleDatePicker input{    
     border: none !important;
   }
   
   .SingleDatePickerInput {
+    border-radius: 10px;
     width: 100%;
     border: none;
   }

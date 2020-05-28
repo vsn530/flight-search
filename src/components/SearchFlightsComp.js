@@ -15,11 +15,17 @@ const FlightSearch = (props) => {
     const [returnDate, setReturnDate] = useState(props.returnDate)
     const [focused, setFocused] = useState(false)
     const [retfocused, setretFocused] = useState(false)
+    const[errorMsg,setErrorMsg] = useState('');
 
     const [cities, setCities] = useState([])
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if(sourceCity == destCity){
+            setErrorMsg('Source and Destination cannot be Same, Please Modify')
+            return
+        }
+        setErrorMsg('');
         props.dispatch({type:'SET_FILTERS',
                 payload:{
                     sourceCity,
@@ -28,12 +34,10 @@ const FlightSearch = (props) => {
                     returnDate
                 }
             })
-        // console.log(moment(moment(startDate).format('YYYY-MM-DD')))
-        // console.log(moment('2020-06-15'))
     }
 
     useEffect(() => {
-        fetch('http://localhost:3001/cities')
+        fetch('http://localhost:3001/cities',{})
         .then(res => res.json())
         .then(cities => setCities([...cities]))
         .catch(err => console.log(err))
@@ -47,8 +51,7 @@ const FlightSearch = (props) => {
         return (
             <div className='search'>
                 <div className='container'>
-                    <h1 id=''><span className='text-primary'>Plan</span> Your Travel</h1>
-                    {props.isAuthenticated?'Logout':'Login'}
+                    <h1 id=''><span className='text-primary'>Plan</span> Your Travel</h1>                    
                     <div>
                         <form id='search-form' onSubmit={handleSubmit}>
                             <div className='box'>
@@ -106,7 +109,12 @@ const FlightSearch = (props) => {
                                     />
                                 </div>
                             </div>
-                            <button type='submit'  disabled={!(sourceCity && destCity && startDate)} className='btn'>Find availablity</button>
+                            <div className='actions'>
+                                <button type='submit' disabled={!(sourceCity && destCity && startDate)} className='btn'>Find availablity</button>
+                                {errorMsg && <p id='error'><small style={{color:"red",marginRight:'5px'}}>*</small>{errorMsg}</p>}
+                                
+                            </div>
+                            
     
                         </form>
                     </div>

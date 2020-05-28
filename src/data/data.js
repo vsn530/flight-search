@@ -31,47 +31,50 @@ export const flightData = [
         fnumber: 'AA76854', airlinename: 'Air Asia', departure: '2020-06-14', arrival: '2020-05-14', duration: '5', stops: 1, route: ['bangalore', 'chennai', 'delhi']
     },
     {
-        fnumber: 'SP176854', airlinename: 'Spice Jet', departure: '2020-06-13', arrival: '2020-06-13', duration: '5', stops: 1, route: ['bangalore', 'hyderabad', 'amaravati']
+        fnumber: 'SP176854', airlinename: 'Spice Jet', departure: '2020-06-11', arrival: '2020-06-11', duration: '5', stops: 2, route: ['bangalore', 'hyderabad', 'chennai','amaravati']
     },
     {
-        fnumber: 'GI176854', airlinename: 'Go India', departure: '2020-06-11', arrival: '2020-06-11', duration: '5', stops: 1, route: ['bangalore', 'delhi', 'chennai']
+        fnumber: 'GI176854', airlinename: 'Go India', departure: '2020-06-11', arrival: '2020-06-11', duration: '5', stops: 2, route: ['bangalore', 'delhi', 'chennai','hyderabad']
     },
     {
-        fnumber: 'JET76854', airlinename: 'Jet Airways', departure: '2020-06-15', arrival: '2020-06-15', duration: '5', stops: 1, route: ['bangalore', 'mumbai', 'hyderabad']
+        fnumber: 'JET76854', airlinename: 'Jet Airways', departure: '2020-06-11', arrival: '2020-06-11', duration: '5', stops: 2, route: ['bangalore', 'mumbai', 'chennai','hyderabad']
     },
     {
-        fnumber: 'AA76854', airlinename: 'Air Asia', departure: '2020-06-14', arrival: '2020-05-14', duration: '5', stops: 1, route: ['bangalore', 'chennai', 'delhi']
+        fnumber: 'AA76854', airlinename: 'Air Asia', departure: '2020-06-11', arrival: '2020-05-11', duration: '5', stops: 1, route: ['bangalore', 'chennai', 'delhi']
     },
     {
-        fnumber: 'SP176854', airlinename: 'Spice Jet', departure: '2020-06-13', arrival: '2020-06-13', duration: '5', stops: 1, route: ['bangalore', 'hyderabad', 'amaravati']
+        fnumber: 'SP176854', airlinename: 'Spice Jet', departure: '2020-06-11', arrival: '2020-06-11', duration: '5', stops: 2, route: ['bangalore', 'hyderabad', 'chennai','amaravati']
     },
     {
-        fnumber: 'GI176854', airlinename: 'Go India', departure: '2020-06-11', arrival: '2020-06-11', duration: '5', stops: 1, route: ['bangalore', 'delhi', 'chennai']
+        fnumber: 'GI176854', airlinename: 'Go India', departure: '2020-06-11', arrival: '2020-06-11', duration: '5', stops: 1, route: ['bangalore', 'delhi', 'hyderabad','chennai']
     },
 
     {
         fnumber: 'JET87653', airlinename: 'Jet Airways', departure: '2020-06-13', arrival: '2020-06-13', duration: '4', stops: 1, route: ['mumbai', 'chennai', 'delhi']
     },
     {
-        fnumber: 'AA97653', airlinename: 'Air Asia', departure: '2020-06-17', arrival: '2020-06-17', duration: '4', stops: 1, route: ['mumbai', 'hyderabad', 'bangalore']
+        fnumber: 'AA97653', airlinename: 'Air Asia', departure: '2020-06-17', arrival: '2020-06-17', duration: '4', stops: 1, route: ['mumbai', 'hyderabad', 'chennai','bangalore']
     },
     {
-        fnumber: 'SP11653', airlinename: 'Spice Jet', departure: '2020-06-14', arrival: '2020-06-14', duration: '4', stops: 1, route: ['mumbai', 'bangalore', 'chennai']
+        fnumber: 'SP11653', airlinename: 'Spice Jet', departure: '2020-06-14', arrival: '2020-06-14', duration: '4', stops: 1, route: ['mumbai', 'bangalore', 'hyderabad','chennai']
     },
     {
-        fnumber: 'GI45653', airlinename: 'Jet Airways', departure: '2020-06-15', arrival: '2020-06-15', duration: '4', stops: 1, route: ['mumbai', 'amaravati', 'hyderabad']
+        fnumber: 'GI45653', airlinename: 'Jet Airways', departure: '2020-06-15', arrival: '2020-06-15', duration: '4', stops: 1, route: ['mumbai', 'amaravati', 'chennai','hyderabad']
     },
     {
-        fnumber: 'JET87653', airlinename: 'Jet Airways', departure: '2020-06-13', arrival: '2020-06-13', duration: '4', stops: 1, route: ['mumbai', 'chennai', 'delhi']
+        fnumber: 'JET87653', airlinename: 'Jet Airways', departure: '2020-06-16', arrival: '2020-06-16', duration: '4', stops: 1, route: ['mumbai', 'chennai','hyderabad', 'delhi']
     },
     {
-        fnumber: 'AA97653', airlinename: 'Air Asia', departure: '2020-06-17', arrival: '2020-06-17', duration: '4', stops: 1, route: ['mumbai', 'hyderabad', 'bangalore']
+        fnumber: 'AA97653', airlinename: 'Air Asia', departure: '2020-06-16', arrival: '2020-06-16', duration: '4', stops: 1, route: ['mumbai', 'hyderabad', 'bangalore']
     },
     {
-        fnumber: 'SP11653', airlinename: 'Spice Jet', departure: '2020-06-14', arrival: '2020-06-14', duration: '4', stops: 1, route: ['mumbai', 'bangalore', 'chennai']
+        fnumber: 'SP11653', airlinename: 'Spice Jet', departure: '2020-06-16', arrival: '2020-06-16', duration: '4', stops: 2, route: ['mumbai', 'bangalore', 'chennai', 'hyderabad']
     },
     {
-        fnumber: 'GI45653', airlinename: 'Jet Airways', departure: '2020-06-15', arrival: '2020-06-15', duration: '4', stops: 1, route: ['mumbai', 'amaravati', 'hyderabad']
+        fnumber: 'GI45653', airlinename: 'Jet Airways', departure: '2020-06-15', arrival: '2020-06-15', duration: '4', stops: 1, route: ['mumbai', 'amaravati', 'hyderabad','chennai']
+    },
+    {
+        fnumber: 'GI45653', airlinename: 'Jet Airways', departure: '2020-06-16', arrival: '2020-06-16', duration: '4', stops: 1, route: ['mumbai', 'bangalore', 'hyderabad','chennai']
     },
 
 
@@ -130,7 +133,7 @@ export const flightData = [
         fnumber: 'IN34512', airlinename: 'Air Asia', departure: '2020-06-11', arrival: '2020-06-11', duration: '3', stops: 2, route: ['hyderabad', 'mumbai', 'delhi']
     },
     {
-        fnumber: 'IN34512', airlinename: 'Jet Airways', departure: '2020-06-11', arrival: '2020-06-11', duration: '3', stops: 2, route: ['hyderabad', 'chennai', 'mumbai']
+        fnumber: 'IN34512', airlinename: 'Jet Airways', departure: '2020-06-15', arrival: '2020-06-15', duration: '3', stops: 2, route: ['hyderabad', 'chennai', 'mumbai']
     },
     {
         fnumber: 'IN34512', airlinename: 'Spice Jet', departure: '2020-06-15', arrival: '2020-06-15', duration: '3', stops: 2, route: ['hyderabad', 'amaravati', 'chennai']
@@ -139,7 +142,7 @@ export const flightData = [
         fnumber: 'IN34512', airlinename: 'Go India', departure: '2020-06-15', arrival: '2020-06-15', duration: '3', stops: 1, route: ['hyderabad', 'bangalore', 'mumbai']
     },
     {
-        fnumber: 'IN34512', airlinename: 'Air Asia', departure: '2020-06-11', arrival: '2020-06-11', duration: '3', stops: 2, route: ['hyderabad', 'mumbai', 'delhi']
+        fnumber: 'IN34512', airlinename: 'Air Asia', departure: '2020-06-15', arrival: '2020-06-15', duration: '3', stops: 2, route: ['hyderabad', 'mumbai', 'delhi']
     },
     {
         fnumber: 'IN34512', airlinename: 'Jet Airways', departure: '2020-06-11', arrival: '2020-06-11', duration: '3', stops: 2, route: ['hyderabad', 'chennai', 'mumbai']
