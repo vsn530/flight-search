@@ -9,11 +9,11 @@ app.use(express.static(publicPath));
 app.get('/', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'));
 });
-const cities = ['Hyderabad','Chennai','Bangalore','Delhi','Amaravati']
+const cities = ['Hyderabad', 'Chennai', 'Bangalore', 'Delhi', 'Amaravati','Mumbai']
 app.get('/cities', (req,res)=>{
-    res.send(res.json(cities))
+    res.send(JSON.stringify(cities))
 })
 
 app.listen(port, () => {
-  console.log('Server is up!',port);
+  console.log('App is running on port: ',port);
 });

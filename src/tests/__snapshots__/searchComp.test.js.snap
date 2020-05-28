@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests Connected Search Component with React-Redux  renders Search component correctly 1`] = `
+<div
+  className="search"
+>
+  <div
+    className="container"
+  >
+    <h1
+      id=""
+    >
+      <span
+        className="text-primary"
+      >
+        Plan
+      </span>
+       Your Travel
+    </h1>
+    <div>
+      <form
+        id="search-form"
+        onSubmit={[Function]}
+      >
+        <div
+          className="box"
+        >
+          <div
+            id="form-control"
+          >
+            <label
+              htmlFor="source"
+            >
+              Source City 
+              <small
+                style={
+                  Object {
+                    "color": "red",
+                  }
+                }
+              >
+                *
+              </small>
+            </label>
+            <select
+              className="select-css"
+              id="source"
+              onChange={[Function]}
+              value=""
+            >
+              <option>
+                Select City
+              </option>
+            </select>
+          </div>
+          <div
+            id="form-control"
+          >
+            <label
+              htmlFor="destination"
+            >
+              Destination City 
+              <small
+                style={
+                  Object {
+                    "color": "red",
+                  }
+                }
+              >
+                *
+              </small>
+            </label>
+            <select
+              className="select-css"
+              id="destination"
+              onChange={[Function]}
+              value=""
+            >
+              <option>
+                Select City
+              </option>
+            </select>
+          </div>
+        </div>
+        <div
+          className="box"
+        >
+          <div
+            id="form-control"
+          >
+            <label
+              htmlFor="traveldate"
+            >
+              Starting on 
+              <small
+                style={
+                  Object {
+                    "color": "red",
+                  }
+                }
+              >
+                *
+              </small>
+            </label>
+            <div
+              className="SingleDatePicker SingleDatePicker_1"
+            >
+              <div
+                className="SingleDatePickerInput SingleDatePickerInput_1 SingleDatePickerInput__withBorder SingleDatePickerInput__withBorder_2"
+              >
+                <button
+                  className="SingleDatePickerInput_calendarIcon SingleDatePickerInput_calendarIcon_1"
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <svg
+                    className="SingleDatePickerInput_calendarIcon_svg SingleDatePickerInput_calendarIcon_svg_1"
+                    focusable="false"
+                    viewBox="0 0 1393.1 1500"
+                  >
+                    <path
+                      d="m107 1393h241v-241h-241zm295 0h268v-241h-268zm-295-295h241v-268h-241zm295 0h268v-268h-268zm-295-321h241v-241h-241zm616 616h268v-241h-268zm-321-616h268v-241h-268zm643 616h241v-241h-241zm-322-295h268v-268h-268zm-294-723v-241c0-7-3-14-8-19-6-5-12-8-19-8h-54c-7 0-13 3-19 8-5 5-8 12-8 19v241c0 7 3 14 8 19 6 5 12 8 19 8h54c7 0 13-3 19-8 5-5 8-12 8-19zm616 723h241v-268h-241zm-322-321h268v-241h-268zm322 0h241v-241h-241zm27-402v-241c0-7-3-14-8-19-6-5-12-8-19-8h-54c-7 0-13 3-19 8-5 5-8 12-8 19v241c0 7 3 14 8 19 6 5 12 8 19 8h54c7 0 13-3 19-8 5-5 8-12 8-19zm321-54v1072c0 29-11 54-32 75s-46 32-75 32h-1179c-29 0-54-11-75-32s-32-46-32-75v-1072c0-29 11-54 32-75s46-32 75-32h107v-80c0-37 13-68 40-95s57-39 94-39h54c37 0 68 13 95 39 26 26 39 58 39 95v80h321v-80c0-37 13-69 40-95 26-26 57-39 94-39h54c37 0 68 13 94 39s40 58 40 95v80h107c29 0 54 11 75 32s32 46 32 75z"
+                    />
+                  </svg>
+                </button>
+                <div
+                  className="DateInput DateInput_1"
+                >
+                  <input
+                    aria-describedby="DateInput__screen-reader-message-traveldate"
+                    aria-label="Starting on"
+                    autoComplete="off"
+                    className="DateInput_input DateInput_input_1"
+                    disabled={false}
+                    id="traveldate"
+                    name="traveldate"
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    placeholder="Starting on"
+                    readOnly={false}
+                    required={false}
+                    type="text"
+                    value=""
+                  />
+                  <p
+                    className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+                    id="DateInput__screen-reader-message-traveldate"
+                  >
+                    Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="form-control"
+          >
+            <label
+              htmlFor="returndate"
+            >
+              Returning on
+            </label>
+            <div
+              className="SingleDatePicker SingleDatePicker_1"
+            >
+              <div
+                className="SingleDatePickerInput SingleDatePickerInput_1 SingleDatePickerInput__withBorder SingleDatePickerInput__withBorder_2"
+              >
+                <button
+                  className="SingleDatePickerInput_calendarIcon SingleDatePickerInput_calendarIcon_1"
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <svg
+                    className="SingleDatePickerInput_calendarIcon_svg SingleDatePickerInput_calendarIcon_svg_1"
+                    focusable="false"
+                    viewBox="0 0 1393.1 1500"
+                  >
+                    <path
+                      d="m107 1393h241v-241h-241zm295 0h268v-241h-268zm-295-295h241v-268h-241zm295 0h268v-268h-268zm-295-321h241v-241h-241zm616 616h268v-241h-268zm-321-616h268v-241h-268zm643 616h241v-241h-241zm-322-295h268v-268h-268zm-294-723v-241c0-7-3-14-8-19-6-5-12-8-19-8h-54c-7 0-13 3-19 8-5 5-8 12-8 19v241c0 7 3 14 8 19 6 5 12 8 19 8h54c7 0 13-3 19-8 5-5 8-12 8-19zm616 723h241v-268h-241zm-322-321h268v-241h-268zm322 0h241v-241h-241zm27-402v-241c0-7-3-14-8-19-6-5-12-8-19-8h-54c-7 0-13 3-19 8-5 5-8 12-8 19v241c0 7 3 14 8 19 6 5 12 8 19 8h54c7 0 13-3 19-8 5-5 8-12 8-19zm321-54v1072c0 29-11 54-32 75s-46 32-75 32h-1179c-29 0-54-11-75-32s-32-46-32-75v-1072c0-29 11-54 32-75s46-32 75-32h107v-80c0-37 13-68 40-95s57-39 94-39h54c37 0 68 13 95 39 26 26 39 58 39 95v80h321v-80c0-37 13-69 40-95 26-26 57-39 94-39h54c37 0 68 13 94 39s40 58 40 95v80h107c29 0 54 11 75 32s32 46 32 75z"
+                    />
+                  </svg>
+                </button>
+                <div
+                  className="DateInput DateInput_1"
+                >
+                  <input
+                    aria-describedby="DateInput__screen-reader-message-returndate"
+                    aria-label="Return on"
+                    autoComplete="off"
+                    className="DateInput_input DateInput_input_1"
+                    disabled={false}
+                    id="returndate"
+                    name="returndate"
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    placeholder="Return on"
+                    readOnly={false}
+                    required={false}
+                    type="text"
+                    value=""
+                  />
+                  <p
+                    className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+                    id="DateInput__screen-reader-message-returndate"
+                  >
+                    Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          className="btn"
+          disabled={true}
+          type="submit"
+        >
+          Find availablity
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

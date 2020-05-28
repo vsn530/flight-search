@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { AgGridReact } from 'ag-grid-react';
-import {columnDef, rowDatainitial} from '../data/data';
+import {columnDef} from '../data/data';
+import { connect } from 'react-redux';
+import getFilteredData from '../data/FilterData'
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-balham.css';
 import '../styles/Gridcomp.css';
@@ -10,30 +12,51 @@ import '../styles/Gridcomp.css';
 const Grid = (props) => {
     
     const[columnDefs,setColumnDefs]= useState([...columnDef]);
-    const[rowData,setRowData]= useState([...rowDatainitial]);
+    const gridOptions = {
+        pagination:true,
+        paginationPageSize :5,   
+    }
+    if(!props.isAuthenticated){
+        return (
+            <div></div>
+        )
+    }
 
-
-    return (
+    return (    
 
         <div id='griddiv'>
-            <div className='container'>
-                <p>Available Flights...</p>
-                <div
-                    className="ag-theme-balham"
-                    style={{
-                        height: '350px',
-                        width: '100%'
-                    }}
-                >
-                    <AgGridReact
-                        columnDefs={columnDefs}
-                        rowData={rowData}>                        
-                    </AgGridReact>
-                </div>
-            </div>
-
+            {
+                props.flightData.length > 0 ? (
+                    
+                    <div className='container'>
+                        <p id="msg">{`Found ${props.flightData.length} flights information` }</p>
+                        <div
+                            className="ag-theme-balham"
+                            style={{
+                                height: '350px',
+                                width: '100%'
+                            }}
+                        >
+                            <AgGridReact
+                                columnDefs={columnDefs}
+                                rowData={props.flightData}
+                                gridOptions = {gridOptions}>                                                           
+                            </AgGridReact>
+                        </div>
+                    </div>
+                ):undefined
+            }
         </div>
     )
 }
 
-export default Grid;
+const mapStateToProps = (state) => {
+    return {
+        flightData:getFilteredData(state.flightsData,state.searchData),
+        isAuthenticated:state.userData.isAuthenticated
+    }
+    
+}
+
+export default connect(mapStateToProps)(Grid);
+// export default Grid;

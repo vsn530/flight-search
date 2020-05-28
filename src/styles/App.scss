@@ -11,7 +11,8 @@ html{
 }
 body{
   /* background-color: grey; */
-  background: rgb(243, 241, 241);
+  // background: rgb(243, 241, 241);
+  background: url(../images/gettyimages-155380716-2048x2048.jpg)  ;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
 }
@@ -48,5 +49,22 @@ h1,h2,h3{
 .btn:hover{
   background: #f7c08a;
   color: #333;
+}
+
+.btn:disabled{
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: lighten($color: #333333, $amount: 50);
+  padding: 13px 20px;
+  margin: 10px;
+  border: none;
+  pointer-events: none;
+  /* cursor: pointer; */
+}
+
+.login{
+  display: flex;
+  justify-content: space-between;
 }
 
